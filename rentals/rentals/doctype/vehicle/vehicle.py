@@ -7,4 +7,8 @@ from frappe.model.document import Document
 
 class Vehicle(Document):
 	def before_save(self):
-		self.title = f"{self.model}-{self.manufactured_date}"
+		self.set_title()
+	def set_title(self):
+			self.title = f"{self.model}-{self.manufactured_date}"
+
+

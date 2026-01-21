@@ -7,4 +7,5 @@ def execute():
 		vehicle.set_title()
 		vehicle.save()
 
+
 	frappe.db.commit()

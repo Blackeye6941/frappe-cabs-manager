@@ -8,8 +8,8 @@
  "field_order": [
   "customer_name",
   "pickup_address",
-  "vehicle",
   "column_break_sywz",
+  "vehicle",
   "phone",
   "status",
   "pickup_time"
@@ -17,14 +17,15 @@
  "fields": [
   {
    "fieldname": "customer_name",
-   "fieldtype": "Autocomplete",
+   "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Customer Name",
+   "length": 20,
    "reqd": 1
   },
   {
    "fieldname": "pickup_address",
-   "fieldtype": "Autocomplete",
+   "fieldtype": "Small Text",
    "in_list_view": 1,
    "label": "Pickup Address",
    "reqd": 1
@@ -35,7 +36,7 @@
   },
   {
    "fieldname": "phone",
-   "fieldtype": "Autocomplete",
+   "fieldtype": "Phone",
    "in_list_view": 1,
    "label": "Phone",
    "reqd": 1
@@ -64,7 +65,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-01-15 21:15:21.887574",
+ "modified": "2026-01-21 22:55:17.656863",
  "modified_by": "Administrator",
  "module": "Rentals",
  "name": "Booking",

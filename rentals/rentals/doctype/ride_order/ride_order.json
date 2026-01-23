@@ -9,7 +9,10 @@
   "amended_from",
   "order",
   "column_break_jqcd",
-  "driver"
+  "driver",
+  "editable",
+  "section_break_npsm",
+  "table_evoi"
  ],
  "fields": [
   {
@@ -44,13 +47,28 @@
   {
    "fieldname": "column_break_jqcd",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "editable",
+   "fieldtype": "Data",
+   "label": "Editable",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_npsm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_evoi",
+   "fieldtype": "Table",
+   "options": "Ride Booking Item"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-01-22 00:18:27.497816",
+ "modified": "2026-01-23 18:45:44.521931",
  "modified_by": "Administrator",
  "module": "Rentals",
  "name": "Ride Order",

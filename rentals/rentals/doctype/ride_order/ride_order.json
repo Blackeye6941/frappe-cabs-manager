@@ -8,11 +8,15 @@
   "section_break_dcno",
   "amended_from",
   "order",
+  "vehicle",
   "column_break_jqcd",
   "driver",
   "editable",
   "section_break_npsm",
-  "table_evoi"
+  "orders",
+  "column_break_hqdc",
+  "rate",
+  "total_amount"
  ],
  "fields": [
   {
@@ -51,24 +55,45 @@
   {
    "fieldname": "editable",
    "fieldtype": "Data",
-   "label": "Editable",
-   "read_only": 1
+   "label": "Editable"
   },
   {
    "fieldname": "section_break_npsm",
    "fieldtype": "Section Break"
   },
   {
-   "fieldname": "table_evoi",
+   "fieldname": "rate",
+   "fieldtype": "Currency",
+   "label": "Rate"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "Total Amount"
+  },
+  {
+   "fieldname": "column_break_hqdc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "orders",
    "fieldtype": "Table",
+   "label": "Orders",
    "options": "Ride Booking Item"
+  },
+  {
+   "fetch_from": "order.vehicle",
+   "fieldname": "vehicle",
+   "fieldtype": "Link",
+   "label": "Vehicle",
+   "options": "Vehicle"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-01-23 18:45:44.521931",
+ "modified": "2026-01-23 19:09:34.851741",
  "modified_by": "Administrator",
  "module": "Rentals",
  "name": "Ride Order",

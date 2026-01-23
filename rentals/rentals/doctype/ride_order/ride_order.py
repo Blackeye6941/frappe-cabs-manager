@@ -6,4 +6,6 @@ from frappe.model.document import Document
 
 
 class RideOrder(Document):
-	pass
+	def validate(self):
+		pass
+		#self.total_amount = self.rate*self.orders.distance

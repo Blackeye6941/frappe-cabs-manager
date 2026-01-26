@@ -4,6 +4,17 @@
 frappe.ui.form.on("Ride Order", {
 	refresh(frm) {
  	},
+	rate(frm){
+		frm.trigger("update_total");
+	},
+	update_total(frm){
+		const total = 0;
+		for(let item of frm.doc.orders){
+			total += item.distance;
+		}
+		const amount = total * frm.doc.rate;
+		frm.set_value("total_amount", amount);
+	},
 });
 
 frappe.ui.form.on('Ride Booking Item', {
@@ -11,6 +22,6 @@ frappe.ui.form.on('Ride Booking Item', {
 		// your code here
 	},
 	distance(frm) {
-		console.log("Distance changed");
+		frm.trigger("update_total");
 	}
 })

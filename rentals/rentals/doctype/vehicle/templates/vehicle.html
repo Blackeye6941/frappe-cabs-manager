@@ -1,0 +1,14 @@
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+{% if vehicle_image %}
+	<img src={{ vehicle_image }} alt="">
+{% else %}
+	<span>No available image</span>
+{% endif %}
+<h1>{{ title }}</h1>
+<h2>{{ vehicle_number }}</h2>
+<a href="/order-a-ride/new?vehicle={{doc.model}}" class="btn btn-info">Book</a>
+{% endblock %}
+
+<!-- this is a sample default web page template -->

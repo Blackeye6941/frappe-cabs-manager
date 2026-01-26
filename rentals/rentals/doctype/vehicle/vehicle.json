@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_guest_to_view": 1,
  "autoname": "autoincrement",
  "creation": "2026-01-15 19:02:08.965530",
  "doctype": "DocType",
@@ -7,9 +8,12 @@
  "field_order": [
   "vehicle_number",
   "manufactured_date",
+  "vehicle_image",
   "column_break_fwnl",
   "model",
-  "title"
+  "title",
+  "is_published",
+  "route"
  ],
  "fields": [
   {
@@ -42,12 +46,30 @@
    "in_list_view": 1,
    "label": "Model",
    "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_published",
+   "fieldtype": "Check",
+   "label": "isPublished"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  },
+  {
+   "fieldname": "vehicle_image",
+   "fieldtype": "Attach Image",
+   "label": "Vehicle image"
   }
  ],
  "grid_page_length": 50,
+ "has_web_view": 1,
  "index_web_pages_for_search": 1,
+ "is_published_field": "is_published",
  "links": [],
- "modified": "2026-01-15 21:20:17.620111",
+ "modified": "2026-01-26 21:18:45.002365",
  "modified_by": "Administrator",
  "module": "Rentals",
  "name": "Vehicle",
@@ -67,6 +89,7 @@
    "write": 1
   }
  ],
+ "route": "cars",
  "row_format": "Dynamic",
  "rows_threshold_for_grid_search": 20,
  "sort_field": "modified",

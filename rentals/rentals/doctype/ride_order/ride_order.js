@@ -23,5 +23,8 @@ frappe.ui.form.on('Ride Booking Item', {
 	},
 	distance(frm) {
 		frm.trigger("update_total");
+	},
+	orders_remove(frm){
+		frm.trigger("update_total");
 	}
 })

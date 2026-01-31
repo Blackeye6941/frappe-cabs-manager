@@ -1,0 +1,28 @@
+{
+ "attach_print": 0,
+ "channel": "Email",
+ "creation": "2026-01-31 21:50:29.386597",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Ride Order",
+ "enabled": 1,
+ "event": "New",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "New booking created\n<a href=\"http://test.localhost/app\">Click here</a>",
+ "message_type": "HTML",
+ "modified": "2026-01-31 21:50:29.386597",
+ "modified_by": "Administrator",
+ "module": "Rentals",
+ "name": "New Booking Arrived",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_role": "System Manager"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": "{{ doc.customer_name }} booked {{ doc.vehicle }}"
+}

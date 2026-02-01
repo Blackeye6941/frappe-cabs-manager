@@ -9,6 +9,7 @@
   "vehicle_number",
   "manufactured_date",
   "vehicle_image",
+  "insurance_expiry",
   "column_break_fwnl",
   "model",
   "title",
@@ -62,6 +63,11 @@
    "fieldname": "vehicle_image",
    "fieldtype": "Attach Image",
    "label": "Vehicle image"
+  },
+  {
+   "fieldname": "insurance_expiry",
+   "fieldtype": "Date",
+   "label": "Insurance Expiry"
   }
  ],
  "grid_page_length": 50,
@@ -69,7 +75,7 @@
  "index_web_pages_for_search": 1,
  "is_published_field": "is_published",
  "links": [],
- "modified": "2026-01-26 21:18:45.002365",
+ "modified": "2026-02-01 18:09:17.054135",
  "modified_by": "Administrator",
  "module": "Rentals",
  "name": "Vehicle",
